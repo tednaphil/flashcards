@@ -1,5 +1,3 @@
-const { countCards } = require("./deck");
-
 function evaluateGuess(guess, cardObject) {
     let valid = cardObject.answers.includes(guess);
     let correct = guess === cardObject.correctAnswer ? true : false;
