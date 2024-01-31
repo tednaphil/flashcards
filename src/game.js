@@ -3,7 +3,7 @@ const prototypeQuestions = data.prototypeData;
 const util = require('./util');
 const {createCard} = require('./card');
 const {createDeck, countCards} = require('./deck');
-const {createRound} = require('../src/round');
+const {createRound} = require('./round');
 
 
 function printMessage(deck) {
@@ -25,4 +25,4 @@ function start() {
   printQuestion(round);
 };
 
-module.exports = { printMessage, printQuestion };
+module.exports = { printMessage, printQuestion, start };
