@@ -1,4 +1,4 @@
-# FlashCards Starter Kit
+<!-- # FlashCards Starter Kit
 
 ## Fork This Repo
 
@@ -56,3 +56,14 @@ Run your test suite using the command:
 ```bash
 npm test
 ```
+-->
+# <p align="center">Flashcards💥</p>
+
+<p align="center">Abstract</p>
+
+## Preview
+## Technologies Used
+## Installation Instructions
+
+<!--9 hours for test suite and functionality-->
+
