@@ -25,4 +25,8 @@ function start() {
   printQuestion(round);
 };
 
-module.exports = { printMessage, printQuestion, start };
+module.exports = {
+  printMessage,
+  printQuestion,
+  start
+};
