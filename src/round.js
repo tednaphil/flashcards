@@ -1,5 +1,3 @@
-const { countCards } = require("./deck");
-
 function evaluateGuess(guess, cardObject) {
     let valid = cardObject.answers.includes(guess);
     let correct = guess === cardObject.correctAnswer ? true : false;
@@ -29,15 +27,15 @@ function takeTurn(guess, round) {
     };
     if (evaluation !== 'Please choose a valid option!') {
         round.turns++
-        round.deck.push(round.deck.shift())
+        round.deck.shift();
         round.currentCard = round.deck[0]
     };
     return evaluation
 };
 
 function calculatePercentCorrect(round) {
-    let totalCards = countCards(round.deck);
-    let rawScore = (totalCards - round.incorrectGuesses.length) / totalCards;
+    let possiblePoints = round.turns;
+    let rawScore = (possiblePoints - round.incorrectGuesses.length) / possiblePoints;
     let percentage = Math.round(rawScore * 100);
     return percentage    
 };
