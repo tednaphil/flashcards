@@ -240,3 +240,7 @@ const testData = [
       "correctAnswer": "Kate DiCamillo"
   }
 ];
+
+module.exports = {
+  testData
+}
