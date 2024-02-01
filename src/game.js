@@ -9,6 +9,7 @@ const {createRound} = require('./round');
 function printMessage(deck) {
   console.log(`Welcome to FlashCards! You are playing with ${countCards(deck)} cards.
   -----------------------------------------------------------------------`);
+  return (`Welcome to FlashCards! You are playing with ${countCards(deck)} cards.`);
 };
 
 function printQuestion(round) {
