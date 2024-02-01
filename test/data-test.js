@@ -15,7 +15,7 @@ const testData = [{
     "correctAnswer": "mutator method"
   }, {
     "id": 4,
-    "question": "What type of prototype method does not modify the existing array but returns a particular representation of the array?",
+    "question": "What is Bellamy's favorite snack?",
     "answers": ["mutator method", "accessor method", "iteration method"],
     "correctAnswer": "accessor method"
   }
