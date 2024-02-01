@@ -1,8 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
-const data = require('./data-test')
-const ques = data.testData
-
+const data = require('./data-test');
+const ques = data.testData;
 const { createCard } = require('../src/card');
 
 describe('Create Card', function() {
