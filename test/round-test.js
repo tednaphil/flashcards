@@ -112,15 +112,6 @@ describe('Round', function() {
     });
 
     describe('Calculate Percent Correct', function() {
-        // let turn1, turn2, invalidTurn, turn3, turn4;
-        // beforeEach(() => {
-        //     turn1 = takeTurn('Roald Dahl', round);
-        //     turn2 = takeTurn('Errol', round);
-        //     invalidTurn = takeTurn(null, round);
-        //     turn3 = takeTurn('Middle-earth', round);
-        //     turn4 = takeTurn('Maurice Sendak', round);
-    
-        // });
 
         it('should return the percentage of correct guesses', function() {
             takeTurn('Roald Dahl', round);
