@@ -1,5 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
+const data = require('./data-test');
+const ques = data.testData;
 
 const { createDeck, countCards } = require('../src/deck');
 const { createCard } = require('../src/card');
@@ -7,9 +9,9 @@ const { createCard } = require('../src/card');
 describe('Deck', function () {
     let card1, card2, card3;
     beforeEach(() => {
-        card1 = createCard(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
-        card2 = createCard(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
-        card3 = createCard(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+        card1 = createCard(ques[0].id, ques[0].question, ques[0].answers, ques[0].correctAnswer);
+        card2 = createCard(ques[1].id, ques[1].question, ques[1].answers, ques[1].correctAnswer);
+        card3 = createCard(ques[2].id, ques[2].question, ques[2].answers, ques[2].correctAnswer);
     });
 
     describe('Create Deck', function() {
@@ -22,9 +24,9 @@ describe('Deck', function () {
     
             expect(deck).to.deep.equal([card1, card2, card3]);
             expect(deck[0].id).to.equal(1);
-            expect(deck[0].question).to.equal('What is Robbie\'s favorite animal');
-            expect(deck[0].answers).to.deep.equal(['sea otter', 'pug', 'capybara']);
-            expect(deck[0].correctAnswer).to.equal('sea otter');
+            expect(deck[0].question).to.equal("Who wrote 'Charlie and the Chocolate Factory'?");
+            expect(deck[0].answers).to.deep.equal(["Roald Dahl", "J.K. Rowling", "Dr. Seuss"]);
+            expect(deck[0].correctAnswer).to.equal("Roald Dahl");
         });
     
         it('should not add duplicate cards', function() {
